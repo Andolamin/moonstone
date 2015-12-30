@@ -280,6 +280,7 @@ module.exports = kind(
 	*/
 	moreComponents: [
 		{name: 'animator', kind: Animator, onStep: 'animatorStep', onEnd: 'animatorComplete'},
+		{name: 'tapArea', ontap: 'tapAreaTapped', kind: Control},
 		{name: 'knob', kind: Control, ondown: 'handleKnobDown', onup: 'hideKnobStatus'}
 	],
 
